@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      button{
+        width: 80%;
+      }
+      #sPage,.scene{
+        text-align: center;
+      }
+      .scene p{
+        margin-top: 50px;
+        padding-bottom: 30px;
+      }
+      #sPage button{
+        margin-top: 40%;
+      }
+      body{
+        background-image: url(img/bg.jpg);
+        background-size: 100%;
+        padding-right: 25px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="sPage">
+      <button class="btn" id="start">START!</button><br/>
+    </div>
+    <div class="scene" id="cj1" style="display:none;">
+      <p>睡不着了。睡不着了。<br/>每天12点就让人睡觉，大好时光都被荒废了！<br>铲屎的还在睡么？</p>
+      <button class="btn" id="cj1a">算了，让他再睡会吧</button><br/><br>
+      <button class="btn" id="cj1b">快给爷起来，爷要用早膳了！爷要拉屎尿尿！</button>
+    </div>
+    <div class="scene" id="cj2" style="display:none;">
+      <p>10分钟过去了铲屎的怎么还毫无反应啊！什么情况！<br/>早上好啊铲屎的<br>吃饭吃饭！<br/>突然觉得体内废物堆积过量了！</p>
+      <button class="btn" id="cj2a">快去阳台解决一下，顺便看看今天天气如何！</button><br><br>
+      <button class="btn" id="cj2b">我要是走了，铲屎的肯定会对我的食物动手脚！就这里解决吧！</button>
+    </div>
+    <div class="scene" id="cj3" style="display:none;">
+      <p>排泄舒畅心情大好<br/>现在小爷该做点什么呢？</p>
+      <button class="btn" id="cj3a">小爷去玩球了</button><br>
+      <button class="btn" id="cj3b">我来临幸你们了，我的袜子们</button><br><br>
+      <button class="btn" id="cj3c">我来临幸你了铲屎的，过来让爷舔舔</button>
+    </div>
+    <div class="scene" id="cj4" style="display:none;">
+      <p>显然铲屎的并不愿意搭理我<br/>已经和这个无聊对的球玩了半天了<br>我还是做点什么来吸引一下铲屎的注意力吧</p>
+      <button class="btn" id="cj4a">铲屎的你看，我可以吧这只袜子扔到你脸上！</button><br><br>
+      <button class="btn" id="cj4b">我来临幸你了铲屎的，过来让爷舔舔</button>
+    </div>
+    <div class="scene" id="cj5" style="display:none;">
+      <p>铲屎的居然骂了我！他居然骂了我！<br/>看来我和这些袜子们没法继续玩下去了！</p>
+      <button class="btn" id="cj5a">让小爷去偷几张餐巾纸，用他们来发泄小爷心中的怒火！</button><br><br>
+      <button class="btn" id="cj5b">你牛呗！你咋不上天呢！我要去默默的看着窗外，独自感受这份凄凉了。</button>
+    </div>
+    <div class="scene" id="over1" style="display:none;">
+      <p>我仿佛看到铲屎的在google狗肉的100种做法了。还给二郎妈说晚上要吃卤肉。<br/>今天的洗澡水有点烫<br>今天沐浴露闻怎么是粉状的，居然叫十三香这么土的名字<br/><b>GAME OVER!</b></p>
+      <button class="btn btn-danger gameover">铲屎的我们再来大战三百回合！</button>
+    </div>
+    <div class="scene" id="cj6" style="display:none;">
+      <p>铲屎的果然被我的忧郁气质所打动了！<br/>这是要带我出去玩啊！！<br>等下，这是什么鬼东西！</p>
+      <button class="btn" id="cj6a">想让我带狗链？门都没有啊！小爷骨子里流淌着的是热爱自由的狗血！</button><br><br>
+      <button class="btn" id="cj6b">好狗不吃眼前亏，小爷能屈能伸！走着。</button>
+    </div> 
+    <div class="scene" id="over2" style="display:none;">
+      <p>花园里风景很不错啊！<br/>那边那只藏獒姑娘，让我们一起摇摆吧！<br><b>哇哈哈哈哈哈哈！小爷会照顾你的！</b></p>
+      <button class="btn btn-success gameover">这样的结果才是我想要的！哈哈哈，要不在试试别的？</button><br><br>
+    </div>
+    <div class="scene" id="cj7" style="display:none;">
+      <p>你这个骗子！我还以为要出去玩呢！<br/>居然只是在楼道里跑50米折返跑！</p>
+      <button class="btn" id="cj7a">我还是回去继续和我的袜子们玩吧！</button><br><br>
+      <button class="btn" id="cj7b">我错了铲屎的，我们不要相爱想杀了！我们好好的玩耍吧</button>
+    </div>
+    <div class="scene" id="cj8" style="display:none;">
+      <p>别抱我，别抱我<br/>这吃的可以再来一些么？再来点热茶<br>走吧，咱爷俩出去溜达溜达，运动一下</p>
+      <button class="btn" id="cj8a">哎呦！你这小短裤不错啊，来给爷看看，给爷看看啊</button><br><br>
+      <button class="btn" id="cj8b">我就这么静静的在门口等着你，你去换衣服吧</button>
+    </div>
+    <div class="scene" id="over3" style="display:none;">
+      <p>哇哈哈哈哈<br/>小爷略施小计，就获得了自由出门的机会！你上当了！<br>我要去和我的藏獒小女友过没羞没臊的生活了，我会回来看你的。<br/><b>再见啊铲屎的！</b></p>
+      <button class="btn btn-success gameover">铲屎的让我重新来一次吧，我觉得她并不是我喜欢的那种类型的女生。让！我!重!来！</button>
+    </div>
+    <div class="scene" id="over4" style="display:none;">
+      <p>我不就咬了你裤子几口么？<br/>我们的relationship就破裂了？<br><b>你干嘛！干嘛把我关起来！</b></p>
+      <button class="btn btn-warning gameover">放我出来！你就这样走了么！我不想睡觉！！不要！！！</button>
+    </div>
+    <div class="scene" id="cj9" style="display:none;">
+      <p>我就是觉得这块瓷砖我很喜欢，想标记一下而已！<br/>你就不听我解释一下么！是瓷砖逼我尿的！<br>你居然把我关起来1个小时！</p>
+      <button class="btn" id="cj9a">我去阳台尿可以了吧！</button><br><br>
+      <button class="btn" id="cj9b">你看你看，这次我没使劲，真的是瓷砖逼我尿呢，你看。。。</button>
+    </div>
+    <div class="scene" id="over5" style="display:none;">
+      <p>真的不怪我！<br/>你干什么！你给宠物医院打电话是什么居心！<br>结！扎！是什么意思！<br/><b>听我解释！！！！</b></p>
+      <button class="btn btn-danger gameover">我不要结扎！我是独生子女！！不。。。要。。。。</button>
+    </div>
+    <div class="scene" id="cj10" style="display:none;">
+      <p>铲屎的！我都叫了你一个小时了！<br/>你是故意装作听不见的吧！</p>
+      <button class="btn" id="cj10a">好吧，吃饭时主要的。看着我无辜的眼神，快看我！</button><br><br>
+      <button class="btn" id="cj10b">起来起来！你不起来我是不会停下来的！！！</button>
+    </div>
+    <div class="scene" id="cj11" style="display:none;">
+      <p>我不过是早上叫了你一下！<br/>你居然就不给我吃早饭！！</p>
+      <button class="btn" id="cj11a">我看那你张餐巾纸味道应该不错，我先去垫一垫！</button><br><br>
+      <button class="btn" id="cj11b">狠心的人类！我去阳台了，别拦着我，让孤度的风吹干我的泪水吧！</button>
+    </div>
+
+  </body>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#start").click(function(){
+        $("#sPage").fadeOut('slow',function(){
+          $("#cj1").fadeIn('slow');
+        }); 
+      });
+      $("#cj1a").click(function(){
+        $("#cj1").fadeOut('slow',function(){
+          $("#cj2").fadeIn('slow');
+        }); 
+      });
+      $("#cj1b").click(function(){
+        $("#cj1").fadeOut('slow',function(){
+          $("#cj10").fadeIn('slow');
+        }); 
+      });
+      $("#cj2a").click(function(){
+        $("#cj2").fadeOut('slow',function(){
+          $("#cj3").fadeIn('slow');
+        }); 
+      });
+      $("#cj2b").click(function(){
+        $("#cj2").fadeOut('slow',function(){
+          $("#cj9").fadeIn('slow');
+        }); 
+      });
+      $("#cj3a").click(function(){
+        $("#cj3").fadeOut('slow',function(){
+          $("#cj4").fadeIn('slow');
+        }); 
+      });
+      $("#cj3b").click(function(){
+        $("#cj3").fadeOut('slow',function(){
+          $("#cj5").fadeIn('slow');
+        }); 
+      });
+      $("#cj3c").click(function(){
+        $("#cj3").fadeOut('slow',function(){
+          $("#cj8").fadeIn('slow');
+        }); 
+      });
+      $("#cj5a").click(function(){
+        $("#cj5").fadeOut('slow',function(){
+          $("#over1").fadeIn('slow');
+        }); 
+      });
+      $("#cj8a").click(function(){
+        $("#cj8").fadeOut('slow',function(){
+          $("#over4").fadeIn('slow');
+        }); 
+      });
+      $("#cj8b").click(function(){
+        $("#cj8").fadeOut('slow',function(){
+          $("#over3").fadeIn('slow');
+        }); 
+      });
+      $("#cj4a").click(function(){
+        $("#cj4").fadeOut('slow',function(){
+          $("#cj5").fadeIn('slow');
+        }); 
+      });
+      $("#cj4b").click(function(){
+        $("#cj4").fadeOut('slow',function(){
+          $("#cj8").fadeIn('slow');
+        }); 
+      });
+      $("#cj5b").click(function(){
+        $("#cj5").fadeOut('slow',function(){
+          $("#cj6").fadeIn('slow');
+        }); 
+      });
+      $("#cj6a").click(function(){
+        $("#cj6").fadeOut('slow',function(){
+          $("#cj7").fadeIn('slow');
+        }); 
+      });
+      $("#cj6b").click(function(){
+        $("#cj6").fadeOut('slow',function(){
+          $("#over2").fadeIn('slow');
+        }); 
+      });
+      $("#cj7a").click(function(){
+        $("#cj7").fadeOut('slow',function(){
+          $("#cj5").fadeIn('slow');
+        }); 
+      });
+      $("#cj7b").click(function(){
+        $("#cj7").fadeOut('slow',function(){
+          $("#cj8").fadeIn('slow');
+        }); 
+      });
+      $("#cj9a").click(function(){
+        $("#cj9").fadeOut('slow',function(){
+          $("#cj3").fadeIn('slow');
+        }); 
+      });
+      $("#cj9b").click(function(){
+        $("#cj9").fadeOut('slow',function(){
+          $("#over5").fadeIn('slow');
+        }); 
+      });
+      $("#cj10a").click(function(){
+        $("#cj10").fadeOut('slow',function(){
+          $("#cj2").fadeIn('slow');
+        }); 
+      });
+      $("#cj10b").click(function(){
+        $("#cj10").fadeOut('slow',function(){
+          $("#cj11").fadeIn('slow');
+        }); 
+      });
+      $("#cj11a").click(function(){
+        $("#cj11").fadeOut('slow',function(){
+          $("#over1").fadeIn('slow');
+        }); 
+      });
+      $("#cj11b").click(function(){
+        $("#cj11").fadeOut('slow',function(){
+          $("#cj6").fadeIn('slow');
+        }); 
+      });
+      $("button.gameover").click(function(){
+        $(this).parent().fadeOut('slow',function(){
+          $("#cj1").fadeIn('slow');
+        }); 
+      });
+    });
+  </script>
+
+</html>
